@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 10px;
+}
+h1 {
+    background-color: gray;
+}
+
+p.gen {
+    background-color: lightslategray;
+    
+}
+
+h4 {
+    background-color: yellow;
+      display: inline;
+}
+.sm-1{
+    padding: 10px;
+}
+.gen{
+    display: block;
+    margin: 5px;
+    padding: 18px;
+}
+
+title{
+    
+}
+.sm-3{
+    display: inline;
+    position: relative;
+    right: 9px;
+}
+
+@media only screen and (max-width: 480px){
+   .sm-2:before{
+       content:"Phone:Width ";
+       font-weight: normal;
+       }
+       .sm-3::before{
+            content:"less than or equal to 480px" 
+       }
+}
+@media only screen and (min-width: 481px){
+
+    
+    .mid-2::before{
+        content:"Tablet:Width ";
+        font-weight: normal;
+        }
+        .mid-3::before{
+            content:"between 481px and 1024px" 
+       }
+    }
+
+@media only screen and (min-width: 1024px){
+    .lg-2::before{
+        content:"Desktop:Width ";
+        font-weight: normal;
+    }
+    .lg-3::before{
+        content:"greater than or equal to 1024px" 
+   }
+    
+}
